@@ -1,4 +1,5 @@
-///* eslint-disable @next/next/no-img-element */
+// eslint-disable @next/next/no-img-element 
+import Image from "next/image";
 import {
   Carousel,
   CarouselContent,
@@ -20,6 +21,7 @@ import {
 
 interface CarouselProductProps {
     // Si estás usando la ImageType plana que definimos antes
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     images: { id: number; url: string; formats: any }[]; 
 }
 
@@ -44,7 +46,7 @@ const CarouselProduct = (props: CarouselProductProps) => {
 
               return (
                 <CarouselItem key={image.id}>
-                  <img
+                  <Image
                     src={fullImageUrl}
                     alt="Image product"
                     className="rounded-lg"
