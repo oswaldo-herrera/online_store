@@ -6,7 +6,7 @@ import { useGetCategories } from "@/api/getProducts";
 import Link from "next/link";
 import { ResponseType } from "@/types/response";
 // Asegúrate que tu CategoryType esté APLANADO para coincidir con el log
-import { CategoryType } from "@/types/category"; 
+//import { CategoryType } from "@/types/category"; 
 
 const ChooseCategory = () => {
   const { result, loading }: ResponseType = useGetCategories();

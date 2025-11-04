@@ -182,43 +182,43 @@ const MenuList= () => {
 
 export default MenuList;
 
-const components: { title: string; href: string; description: string }[] = [
-  {
-    title: "Producto 1",
-    href: "/category/",
-    description:
-      "Descrpción del producto",
-  },
-  {
-    title: "Producto 2",
-    href: "/category/p2",
-    description:
-      "Descrpción del producto",
-  },
-  {
-    title: "Producto 3",
-    href: "/category/p3",
-    description:
-      "Descrpción del producto",
-  },
-  {
-    title: "Producto 4",
-    href: "/category/p4",
-    description: "Descrpción del producto",
-  },
-  {
-    title: "Producto 5",
-    href: "/category/p5",
-    description:
-      "Descrpción del producto",
-  },
-  {
-    title: "Producto 6",
-    href: "/category/p6",
-    description:
-      "Descrpción del producto",
-  },
-]
+// const components: { title: string; href: string; description: string }[] = [
+//   {
+//     title: "Producto 1",
+//     href: "/category/",
+//     description:
+//       "Descrpción del producto",
+//   },
+//   {
+//     title: "Producto 2",
+//     href: "/category/p2",
+//     description:
+//       "Descrpción del producto",
+//   },
+//   {
+//     title: "Producto 3",
+//     href: "/category/p3",
+//     description:
+//       "Descrpción del producto",
+//   },
+//   {
+//     title: "Producto 4",
+//     href: "/category/p4",
+//     description: "Descrpción del producto",
+//   },
+//   {
+//     title: "Producto 5",
+//     href: "/category/p5",
+//     description:
+//       "Descrpción del producto",
+//   },
+//   {
+//     title: "Producto 6",
+//     href: "/category/p6",
+//     description:
+//       "Descrpción del producto",
+//   },
+// ]
 
 function ListItem({
   title,

@@ -5,8 +5,8 @@ import BannerProductSampleCarousel from "@/components/banner-product-sample-caro
 import CarouselTextBanner from "@/components/carousel-text-banner";
 import ChooseCategory from "@/components/choose-category";
 import FeaturedProducts from "@/components/featured-products";
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
+//import { Button } from "@/components/ui/button";
+//import Image from "next/image";
 
 export default function Home() {
   return (
