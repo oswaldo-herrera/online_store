@@ -34,9 +34,9 @@ const Footer = () => {
                         <span className="font-bold">Agricola</span>
                         Emsa
                     </p> */}
-                    <a href="/">
+                    <Link href="/">
                     <div className="h-16 w-32 bg-cover bg-[url('/logo.jpg')] bg-center rounded-lg" />
-                    </a>
+                    </Link>
 
                     <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400" >
                         {dataFooter.map((data) => (
