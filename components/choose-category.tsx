@@ -6,7 +6,7 @@ import { useGetCategories } from "@/api/getProducts";
 import Link from "next/link";
 import { ResponseType } from "@/types/response";
 // Asegúrate que tu CategoryType esté APLANADO para coincidir con el log
-//import { CategoryType } from "@/types/category"; 
+import { CategoryType } from "@/types/category"; 
 
 const ChooseCategory = () => {
   const { result, loading }: ResponseType = useGetCategories();
@@ -20,7 +20,7 @@ const ChooseCategory = () => {
       <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {!loading &&
           result !== null &&
-          result.map((category: any) => {
+          result.map((category: CategoryType) => {
                 
                 // 🛑 AÑADE ESTO: Acceso directo y filtro de seguridad
                 // El objeto category es plano (no tiene attributes)
