@@ -13,7 +13,7 @@ interface CartItemProps {
 
 const CartItem = (props: CartItemProps) => {
     const { product } = props
-    const router = useRouter()
+    //const router = useRouter()
     const { removeItem } = useCart()
 
     // 🛑 1. DEFINIR LA IMAGEN A USAR

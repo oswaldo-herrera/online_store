@@ -3,18 +3,20 @@ import { useGetCategoryProduct } from "@/api/getCategoryProduct";
 import { Separator } from "@/components/ui/separator";
 import { ResponseType } from "@/types/response";
 import { useParams, useRouter } from "next/navigation";
-import FiltersControlsCategory from "./components/filters-controls-category";
+//import FiltersControlsCategory from "./components/filters-controls-category";
 import SkeletonSchema from "@/components/skeletonSchema";
 import ProductCard from "./components/product-card";
 import { ProductType } from "@/types/product";
-import { useMemo,useState } from "react";
+import { useState } from "react";
+//import { useMemo,useState } from "react";
 
 export default function Page() {
   const params = useParams();
   const { categorySlug } = params;
   const { result, loading }: ResponseType = useGetCategoryProduct(categorySlug as string);
-  const [filterOrigin, setFilterOrigin] = useState("");
-  const router = useRouter();
+  //const [filterOrigin, setFilterOrigin] = useState("");
+  const [filterOrigin] = useState("");
+  //const router = useRouter();
   console.log("hola",filterOrigin);
 
   const filteredProducts =

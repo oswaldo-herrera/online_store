@@ -1,4 +1,4 @@
-/* eslint-disable @next/next/no-img-element */
+///* eslint-disable @next/next/no-img-element */
 import ProductImageMinuature from "@/components/shared/product-image-miniature";
 import ProductTasteOrigin from "@/components/shared/product-taste-origin";
 import { Button } from "@/components/ui/button";
@@ -16,7 +16,7 @@ interface LovedItemProductProps {
 
 const LovedItemProduct = (props: LovedItemProductProps) => {
     const { product } = props
-    const router = useRouter()
+    //const router = useRouter()
     const { removeLovedItem } = useLovedProducts()
     const { addItem } = useCart()
 

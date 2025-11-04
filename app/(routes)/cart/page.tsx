@@ -6,7 +6,8 @@ import { formatPrice } from "@/lib/formatPrice";
 import CartItem from "./components/cart-item";
 import { loadStripe } from "@stripe/stripe-js";
 import { makePaymentRequest } from "@/api/payment";
-import { useParams, useRouter } from "next/navigation";
+//import { useParams, useRouter } from "next/navigation";
+import { useRouter } from "next/navigation";
 
 export default function Page() {
   const { items, removeAll } = useCart();
@@ -14,9 +15,9 @@ export default function Page() {
 
   const prices = items.map((product) => product.price);
   const totalPrice = prices.reduce((total, price) => total + price, 0);
-  const stripePromise = loadStripe(
-    process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY || ""
-  );
+  //const stripePromise = loadStripe(
+  //  process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY || ""
+  //);
 
   const buyStripe = async () => {
 

@@ -27,7 +27,8 @@ const ProductCard = ({ product }: ProductCardProps) => {
     const router = useRouter();
     
     // 🛑 Desestructurar los campos necesarios, incluyendo 'images'
-    const { id, productName, images, slug, price } = product; 
+    //const { id, productName, images, slug, price } = product; 
+    const { id, images, slug } = product; 
 
     // 🛑 Aplicar el filtro de seguridad (es vital en un card que siempre debe mostrarse)
     if (!images || images.length === 0 || !images[0].url) {
