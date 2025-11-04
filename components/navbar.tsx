@@ -6,6 +6,7 @@ import ItemsMenuMobile from './menu-list-mobile';
 import ToggleTheme from "./toggle-theme";
 import { useCart } from "@/hooks/use-cart";
 import { useLovedProducts } from "@/hooks/use-loved-products";
+import Link from "next/link";
 
 const Navbar = () => {
     const router = useRouter()
@@ -13,9 +14,9 @@ const Navbar = () => {
     const {lovedItems} = useLovedProducts()
     return(
         <div className="flex items-center justify-between p-4 mx-auto cursor-pointer sm:max-w-4xl md:max-w-6xl">
-            <a href="/">
+            <Link href="/" passHref>
             <div className="h-16 w-32 bg-cover bg-[url('/logo.jpg')] bg-center rounded-lg" />
-            </a>
+            </Link>
             {/* <h1 className="text-3xl" onClick={() => router.push("/")}>Agricola
                 <span className="font-bold">Emsa</span>
             </h1> */}
