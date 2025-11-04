@@ -1,8 +1,7 @@
 "use client"
-
 import * as React from "react"
 import Link from "next/link"
-import { CircleCheckIcon, CircleHelpIcon, CircleIcon } from "lucide-react"
+//import { CircleCheckIcon, CircleHelpIcon, CircleIcon } from "lucide-react"
 
 // import { useIsMobile } from "@/hooks/use-mobile"
 import {
@@ -12,7 +11,7 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
+  //navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 
 const MenuList= () => {
