@@ -50,6 +50,8 @@ const CarouselProduct = (props: CarouselProductProps) => {
                     src={fullImageUrl}
                     alt="Image product"
                     className="rounded-lg"
+                    width={300} 
+                    height={300}
                   />
                 </CarouselItem>
               );
