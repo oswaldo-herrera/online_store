@@ -29,7 +29,8 @@ const FeaturedProducts = () => {
                     //const {attributes, id} = product;
                     //const {slug, images, productName, taste, origin} = attributes;
                     const { id, slug, images, productName, taste, origin } = product;
-                    const imageUrl = `${process.env.NEXT_PUBLIC_BACKEND_URL}${images[0].url}`;
+                    //const imageUrl = `${process.env.NEXT_PUBLIC_BACKEND_URL}${images[0].url}`;
+                    const imageUrl = images[0].url;
 
                     
                     return (
