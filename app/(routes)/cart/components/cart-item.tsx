@@ -32,7 +32,8 @@ const CartItem = (props: CartItemProps) => {
         ); 
     }
     
-    const imageUrl = `${process.env.NEXT_PUBLIC_BACKEND_URL}${firstImage.url}`;
+    //const imageUrl = `${process.env.NEXT_PUBLIC_BACKEND_URL}${firstImage.url}`;
+    const imageUrl = firstImage.url;
 
     return (
         <li className="flex py-6 border-b">

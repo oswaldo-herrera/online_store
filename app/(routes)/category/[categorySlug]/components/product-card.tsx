@@ -38,7 +38,8 @@ const ProductCard = ({ product }: ProductCardProps) => {
 
     // 🛑 Acceso a la URL de la imagen
     // Usamos el formato que hemos determinado que es correcto (images[0].url)
-    const imageUrl = `${process.env.NEXT_PUBLIC_BACKEND_URL}${images[0].url}`;
+    //const imageUrl = `${process.env.NEXT_PUBLIC_BACKEND_URL}${images[0].url}`;
+    const imageUrl = images[0].url;
 
   return (
     <Link

@@ -33,7 +33,8 @@ const ChooseCategory = () => {
                 }
                 
                 // 2. ACCESO A LA URL CORREGIDO: Usamos la URL de la imagen principal
-                const imageUrl = `${process.env.NEXT_PUBLIC_BACKEND_URL}${mainImage.url}`;
+                //const imageUrl = `${process.env.NEXT_PUBLIC_BACKEND_URL}${mainImage.url}`;
+                const imageUrl = mainImage.url;
                 // O usa el formato mediano para mejor rendimiento:
                 // const imageUrl = `${process.env.NEXT_PUBLIC_BACKEND_URL}${mainImage.formats.medium.url}`;
 

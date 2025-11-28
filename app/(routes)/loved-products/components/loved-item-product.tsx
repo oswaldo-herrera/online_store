@@ -36,7 +36,8 @@ const LovedItemProduct = (props: LovedItemProductProps) => {
         ); 
     }
     
-    const imageUrl = `${process.env.NEXT_PUBLIC_BACKEND_URL}${firstImage.url}`;
+    //const imageUrl = `${process.env.NEXT_PUBLIC_BACKEND_URL}${firstImage.url}`;
+    const imageUrl = firstImage.url;
 
 
     const addToCheckout = () => {

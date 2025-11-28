@@ -42,7 +42,8 @@ const CarouselProduct = (props: CarouselProductProps) => {
               }
               
               // 🛑 4. Construcción de la URL de la imagen (PLANA)
-              const fullImageUrl = `${process.env.NEXT_PUBLIC_BACKEND_URL}${image.url}`;
+              //const fullImageUrl = `${process.env.NEXT_PUBLIC_BACKEND_URL}${image.url}`;
+              const fullImageUrl = image.url;
 
               return (
                 <CarouselItem key={image.id}>
