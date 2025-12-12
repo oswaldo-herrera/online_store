@@ -23,6 +23,7 @@ const MenuList= () => {
         <NavigationMenuItem>
           <NavigationMenuTrigger>Sobre Nosotros</NavigationMenuTrigger>
           <NavigationMenuContent>
+            {/* <ul className="grid gap-2 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]"> */}
             <ul className="grid gap-2 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
               <li className="row-span-3">
                 <NavigationMenuLink asChild>
@@ -34,13 +35,19 @@ const MenuList= () => {
                       Agricola Emsa
                     </div>
                     <p className="text-muted-foreground text-sm leading-tight">
-                      Tu Aliado Digital para el Campo. Soluciones y Productos de Alto Rendimiento.
+                      Provedor de soluciones integrales al sector agrícola y forestal mediante la venta de maquinaria de alto rendimiento 
                     </p>
                   </Link>
                 </NavigationMenuLink>
               </li>
-              <ListItem href="/cart" title="Tienda">
-                Accede y revisa tu carrito de compras
+              <ListItem href="/mision" title="Mision">
+                "Proveer soluciones integrales al sector agrícola y forestal mediante la venta de maquinaria de alto rendimiento y un servicio de mantenimiento superior. Nos dedicamos a garantizar la continuidad operativa de nuestros clientes, asegurando que siempre cuenten con el equipo adecuado y el respaldo técnico experto para hacer crecer su producción."
+              </ListItem>
+              <ListItem href="/vision" title="Visión">
+                "Proveer soluciones integrales al sector agrícola y forestal mediante la venta de maquinaria de alto rendimiento y un servicio de mantenimiento superior. Nos dedicamos a garantizar la continuidad operativa de nuestros clientes, asegurando que siempre cuenten con el equipo adecuado y el respaldo técnico experto para hacer crecer su producción."
+              </ListItem>
+              <ListItem href="/privacidad" title="Aviso de Privacidad">
+                "Proveer soluciones integrales al sector agrícola y forestal mediante la venta de maquinaria de alto rendimiento y un servicio de mantenimiento superior. Nos dedicamos a garantizar la continuidad operativa de nuestros clientes, asegurando que siempre cuenten con el equipo adecuado y el respaldo técnico experto para hacer crecer su producción."
               </ListItem>
               {/* <ListItem href="/offers" title="Ofertas">
                 Sección dedicada a promociones y descuentos especiales
